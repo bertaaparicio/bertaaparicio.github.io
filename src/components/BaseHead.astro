@@ -52,7 +52,7 @@ const { title, description, image = "/site-main-image.jpg" } = Astro.props;
 
 <ClientRouter />
 
-<script>
+<script is:inline>
 	window.setColorScheme = function () {
 		document.documentElement.classList.toggle(
 			"dark",

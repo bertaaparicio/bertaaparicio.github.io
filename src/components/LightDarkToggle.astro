@@ -27,8 +27,17 @@ import { Icon } from "astro-icon/components";
 			});
 		});
 	}
-	initLightDarkToggle();
+
+	// Run on Astro page transitions
 	document.addEventListener("astro:page-load", () => {
 		initLightDarkToggle();
 	});
+
+	// Run when the document has loaded
+	document.addEventListener("DOMContentLoaded", () => {
+		initLightDarkToggle();
+	});
+
+	// Immediate initialization
+	initLightDarkToggle();
 </script>
