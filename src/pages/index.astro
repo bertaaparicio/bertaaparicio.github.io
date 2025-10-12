@@ -47,16 +47,38 @@ import NewsletterForm from "../components/NewsletterForm.astro";
 	</div>
 
 	<!-- Hobbies -->
+
 	<div class="my-16 sm:my-30">
-		<div class="mx-auto lg:max-w-4xl">
-			<h2
-				class="text-2xl sm:text-4xl font-bold tracking-tight mb-10 sm:mb-20"
-			>
-				My Hobbies
-			</h2>
+	<div class="mx-auto lg:max-w-4xl text-center">
+		<h2 class="text-2xl sm:text-4xl font-bold tracking-tight mb-10 sm:mb-20">
+		My certifications
+		</h2>
+
+		<!-- Llista de hobbies -->
+		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+		<!-- Hobby 1 -->
+		<div class="flex flex-col items-center">
+			<img
+			src="/images/consulting.jpg"
+			alt="Sports"
+			class="rounded-xl w-48 h-48 object-cover shadow-md"
+			/>
+			<p class="mt-4 text-lg font-semibold">Management Consulting by Emory University</p>
 		</div>
 
+		<!-- Hobby 2 -->
+		<div class="flex flex-col items-center">
+			<img
+			src="/images/AI.jpg"
+			alt="Going shopping"
+			class="rounded-xl w-48 h-48 object-cover shadow-md"
+			/>
+			<p class="mt-4 text-lg font-semibold">IBM Generative AI Engineering Professional Certificate</p>
+		</div>
+		</div>
 	</div>
+	</div>
+
 
 	<!-- Projects -->
 	<div class="my-16 sm:my-30">
